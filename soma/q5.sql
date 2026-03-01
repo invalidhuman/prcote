@@ -1,0 +1,45 @@
+CREATE TABLE BASIC_MONSTERS (
+    MONSTER_ID INT PRIMARY KEY,
+    MONSTER_NAME VARCHAR(50),
+    combat INT
+);
+
+CREATE TABLE FUSION_MONSTERS (
+    MONSTER_ID INT PRIMARY KEY,
+    MONSTER_NAME VARCHAR(50),
+    material1 INT,
+    material2 INT
+);
+
+-- 기본 몬스터 데이터 입력 (ID 3자리)
+INSERT INTO BASIC_MONSTERS VALUES (101, 'slime', 10);
+INSERT INTO BASIC_MONSTERS VALUES (102, 'bobi', 20);
+INSERT INTO BASIC_MONSTERS VALUES (103, 'dragon', 100);
+
+-- 합성 몬스터 데이터 입력 (ID 4자리)
+INSERT INTO FUSION_MONSTERS VALUES (1001, 'slime_bobi', 101, 102);
+INSERT INTO FUSION_MONSTERS VALUES (1002, 'bobi_dragon', 102, 103);
+
+
+
+-- 1. UNION을 사용하여 두 결과를 합칩니다.
+-- 2. 합성 몬스터는 JOIN을 두 번 해서 각각의 전투력을 가져와 더합니다.
+
+SELECT 
+    MONSTER_ID, 
+    MONSTER_NAME, 
+    combat
+FROM BASIC_MONSTERS
+
+UNION ALL
+
+SELECT 
+    F.MONSTER_ID, 
+    F.MONSTER_NAME, 
+    (B1.combat + B2.combat) AS combat
+FROM FUSION_MONSTERS F
+JOIN BASIC_MONSTERS B1 ON F.material1 = B1.MONSTER_ID
+JOIN BASIC_MONSTERS B2 ON F.material2 = B2.MONSTER_ID
+
+-- 3. 전체 결과를 정렬합니다.
+ORDER BY combat DESC, MONSTER_NAME DESC;
