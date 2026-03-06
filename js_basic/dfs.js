@@ -6,7 +6,7 @@
 function dfs(graph, v, visited) {
   // 1. 현재 노드를 방문 처리
   visited[v] = true;
-  console.log(v); // 방문 노드 출력
+  console.log(v);
 
   // 2. 현재 노드와 연결된 다른 노드를 재귀적으로 방문
   // graph[v]가 배열이므로 for...of나 forEach 사용 가능
