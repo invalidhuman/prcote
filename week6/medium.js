@@ -82,3 +82,32 @@ function solution2(numbers, target) {
 
   return answer;
 }
+
+function solution3(numbers, target) {
+  let answer = 0;
+
+  /* 
+  [1,1,1,1,1]
+
+  -1+1-1+1+1 = 3
+
+  재귀호출하면서 더할건지 뺄건지를 정하고 결과가 3이 나오는지 파악하고 맞으면 1을 return / 0
+  재귀 시 합을 return하진 않아도 합을 전해줘야함 -> 매개변수
+
+  */
+
+  function dfs(idx, sum) {
+    if (idx == numbers.length) {
+      if (sum === target) {
+        answer++; // 아예 return이 없는 함수를 써도됨. 외부 참조하고.
+      }
+      return;
+    }
+
+    dfs(idx + 1, sum + numbers[idx]);
+    dfs(idx + 1, sum - numbers[idx]);
+  }
+
+  dfs(0, 0);
+  return answer;
+}
