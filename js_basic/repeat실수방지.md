@@ -7,8 +7,9 @@
 js console.log("++++ ".repeat(quotient) + "|" \* repeat(remainder));
 
 실행 결과:
-
-text ReferenceError: repeat is not defined
+  console.log("++++ ".repeat(quotient) + "|" * repeat(remainder));
+                      ^
+ReferenceError: repeat is not defined
 
 ---
 
