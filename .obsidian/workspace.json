@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "87208bfd9320f582",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe6adf463962747d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c34f0ac3bf47e18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "bfs/lv2_게임 맵 최단거리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "lv2_게임 맵 최단거리"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "20b5e0844d45a9d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "a527760f70d030d1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c55876897ed0434d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "12cccec6d540a4c8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "cbb3c2ee0b785ede",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0c3ff1045b1cc7fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "d827eba6059b9038",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e56b5c33764f625e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "bfs/lv2_게임 맵 최단거리.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "lv2_게임 맵 최단거리 의 백링크"
+            }
+          },
+          {
+            "id": "285beb7ac1f87528",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "bfs/lv2_게임 맵 최단거리.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "lv2_게임 맵 최단거리 의 나가는 링크"
+            }
+          },
+          {
+            "id": "57536d471e64a864",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "0e0221b86fd8a267",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "e9c5dcbb575d0090",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "bfs/lv2_게임 맵 최단거리.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "lv2_게임 맵 최단거리 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "9c34f0ac3bf47e18",
+  "lastOpenFiles": [
+    "bfs/lv2_게임 맵 최단거리.md"
+  ]
+}
