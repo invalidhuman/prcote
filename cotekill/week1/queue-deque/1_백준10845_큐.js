@@ -6,7 +6,9 @@
  */
 function solution(commands) {
   // TODO: 풀이를 작성하세요.
-  var answer = [];
+  var answer = 0; // 서로 다른 나머지의 수
+
+  // 메모해놓고 다를때마다 추가
 
   return answer;
 }
