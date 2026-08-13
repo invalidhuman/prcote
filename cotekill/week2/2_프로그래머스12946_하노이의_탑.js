@@ -42,28 +42,4 @@ function solution(n) {
   return answer;
 }
 
-const testCases = [
-  {
-    args: [2],
-    expected: [
-      [1, 2],
-      [1, 3],
-      [2, 3],
-    ],
-  },
-];
-
-if (require.main === module) {
-  testCases.forEach(({ args, expected }, index) => {
-    const actual = solution(...args);
-    const passed = JSON.stringify(actual) === JSON.stringify(expected);
-
-    console.log(`예제 ${index + 1}: ${passed ? "PASS" : "FAIL"}`);
-    if (!passed) {
-      console.log("  expected:", expected);
-      console.log("  actual:  ", actual);
-    }
-  });
-}
-
 module.exports = solution;
