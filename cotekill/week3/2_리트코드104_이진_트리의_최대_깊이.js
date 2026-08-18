@@ -6,7 +6,8 @@
  * @returns {number} 이진 트리의 최대 깊이
  */
 function solution(root) {
-  // TODO: 풀이를 작성하세요.
+  
+  
 }
 
 module.exports = solution;
