@@ -26,4 +26,21 @@ function solution(strings, n) {
   return answer;
 }
 
+function solution3(strings, n) {
+  // reduce는 요소들을 누적하여 하나의 결과를 반환
+  // map은 각 요소를 변환한 새 배열을 반환한
+
+  // 배열의 길이가 N, 문자열의 최대길이가 L일 때,
+  return strings
+    .map((word) => word[n] + word) // 문자추가 : O(N * L)
+    .sort() // 최악일 때 O(NlogN)
+    .map((word) => word.slice(1)); // O(N*L)
+
+  // strings : 문자열로 구성된 리스트
+  // ["sun","bed","car"]
+  // n  = 1 -> u, e, a
+  // ["usun","ebed","acar"]
+  // 정렬하고 나서 앞 글자를 빼준다.
+}
+
 module.exports = solution;
